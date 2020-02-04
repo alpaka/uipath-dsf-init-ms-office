@@ -94,10 +94,7 @@
     </ui:Click>
     <ui:TypeSecureText ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'password Enter'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[pw]">
       <ui:TypeSecureText.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="bf40729779fa59d5d49465119021d6f2" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='i0118' name='Enter the password for*' role='password' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="bf40729779fa59d5d49465119021d6f2" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='i0118' name='Enter the password for*' role='password' /&gt;" TimeoutMS="30000">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>

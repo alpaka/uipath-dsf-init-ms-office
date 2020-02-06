@@ -1,6 +1,6 @@
 {
   "name": "DSF_Init_Office",
-  "description": "",
+  "description": "Initialize MS Office for the Demo Scalability Framework",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.8.0-preview]",
@@ -11,7 +11,7 @@
   "webServices": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.12.0.61",
-  "projectVersion": "1.0.1-alpha.7",
+  "projectVersion": "1.0.1-alpha.8",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,

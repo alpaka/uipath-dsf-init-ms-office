@@ -54,7 +54,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a48667de66f1be03aeb158352d1f9d91" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Sign in to set up Office' /&gt;&lt;wnd aaname='Sign in to set up Office' cls='NetUIHWND' /&gt;&lt;ctrl idx='3' name='Sign in' role='push button' /&gt;" TimeoutMS="30000">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a48667de66f1be03aeb158352d1f9d91" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Sign in to set up Office' /&gt;&lt;wnd aaname='Sign in to set up Office' cls='NetUIHWND' /&gt;&lt;ctrl idx='3' name='Sign in' role='push button' /&gt;" TimeoutMS="120000">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>

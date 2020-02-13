@@ -179,7 +179,7 @@
     <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="-f -im MicrosoftEdge.exe" DisplayName="Start Process" FileName="taskkill" sap:VirtualizedContainerService.HintSize="435.555555555556,87.5555555555556" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
     <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Title Bar'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4">
       <ui:WaitUiElementAppear.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="08e9e57d537996e941b9cb11cff75a05" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='Inbox*Outlook' /&gt;" TimeoutMS="60000">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="08e9e57d537996e941b9cb11cff75a05" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='Inbox*Outlook' /&gt;" TimeoutMS="120000">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>

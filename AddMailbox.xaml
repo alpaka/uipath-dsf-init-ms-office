@@ -3,7 +3,7 @@
     <x:Property Name="user" Type="InArgument(x:String)" />
     <x:Property Name="pw" Type="InArgument(ss:SecureString)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>497.333333333333,1770.22222222222</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>497.333333333333,1810.22222222222</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -60,10 +60,7 @@
     </ui:CommentOut>
     <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Activate="True" DisplayName="Type Into 'RICHEDIT60W'" sap:VirtualizedContainerService.HintSize="435.555555555556,134.666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="[user]">
       <ui:TypeInto.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d705cab2f05140f0c1698bc3742335eb" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;wnd aaname='Email Account Setup' cls='NetUIHWND' /&gt;&lt;wnd cls='RICHEDIT60W' idx='1' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d705cab2f05140f0c1698bc3742335eb" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;wnd aaname='Email Account Setup' cls='NetUIHWND' /&gt;&lt;wnd cls='RICHEDIT60W' idx='1' /&gt;" TimeoutMS="60000">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>

@@ -3,7 +3,7 @@
     <x:Property Name="user" Type="InArgument(x:String)" />
     <x:Property Name="pw" Type="InArgument(ss:SecureString)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>497.333333333333,1810.22222222222</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>497.333333333333,2079.55555555556</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -29,12 +29,13 @@
       <AssemblyReference>System.Configuration.Install</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddMailbox" sap:VirtualizedContainerService.HintSize="477.333333333333,1710.22222222222" sap2010:WorkflowViewState.IdRef="Sequence_19">
+  <Sequence DisplayName="AddMailbox" sap:VirtualizedContainerService.HintSize="477.333333333333,1979.55555555556" sap2010:WorkflowViewState.IdRef="Sequence_19">
     <sap:WorkflowViewStateService.ViewState>
       <scg1:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg1:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.555555555556,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Adding mailbox&quot;]" />
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.555555555556,288.888888888889" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.555555555556,210.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
@@ -183,5 +184,6 @@
         </ui:Target>
       </ui:WaitUiElementAppear.Target>
     </ui:WaitUiElementAppear>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.555555555556,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Added mailbox&quot;]" />
   </Sequence>
 </Activity>

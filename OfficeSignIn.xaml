@@ -9,7 +9,7 @@
   <this:OfficeSignIn.pw>
     <InArgument x:TypeArguments="ss:SecureString" />
   </this:OfficeSignIn.pw>
-  <sap:VirtualizedContainerService.HintSize>1044.44444444444,1873.77777777778</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1044.44444444444,2183.11111111111</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -33,7 +33,7 @@
       <AssemblyReference>System.Activities</AssemblyReference>
     </scg1:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OfficeSignIn" sap:VirtualizedContainerService.HintSize="1024.44444444444,1813.77777777778" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence DisplayName="OfficeSignIn" sap:VirtualizedContainerService.HintSize="1024.44444444444,2083.11111111111" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="privacyExists" />
     </Sequence.Variables>
@@ -42,6 +42,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg1:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="982.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Office sign-in&quot;]" />
     <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Sign in'" sap:VirtualizedContainerService.HintSize="982.666666666667,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
@@ -227,5 +228,6 @@
         </ui:Click>
       </If.Then>
     </If>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="982.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished office sign-in&quot;]" />
   </Sequence>
 </Activity>

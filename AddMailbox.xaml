@@ -3,7 +3,7 @@
     <x:Property Name="user" Type="InArgument(x:String)" />
     <x:Property Name="pw" Type="InArgument(ss:SecureString)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1020.88888888889,1723.55555555556</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1020.88888888889,1870.22222222222</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -30,7 +30,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddMailbox" sap:VirtualizedContainerService.HintSize="477.333333333333,1558.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+  <Sequence DisplayName="AddMailbox" sap:VirtualizedContainerService.HintSize="477.333333333333,1705.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_19">
     <sap:WorkflowViewStateService.ViewState>
       <scg1:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -166,6 +166,15 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
+    <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Group  SearchControlsRo...'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+      <ui:WaitUiElementAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f269dcf9-6529-4c53-a456-38c198df2a39" InformativeScreenshot="3021ace055aad321d650074a2f22b41c" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='*Outlook' /&gt;" TimeoutMS="120000">
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:WaitUiElementAppear.Target>
+    </ui:WaitUiElementAppear>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.555555555556,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Added mailbox&quot;]" />
   </Sequence>
 </Activity>

@@ -59,7 +59,7 @@
         <PickBranch.Trigger>
           <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element Login window" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
             <ui:WaitUiElementAppear.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="11330d9b-19c1-4678-b5e3-fd8e7bbb268b" InformativeScreenshot="c434b0bf643328b85223eb7fdeba2732" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;" TimeoutMS="240000">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="11330d9b-19c1-4678-b5e3-fd8e7bbb268b" InformativeScreenshot="c434b0bf643328b85223eb7fdeba2732" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;" TimeoutMS="120000">
                 <ui:Target.WaitForReady>
                   <InArgument x:TypeArguments="ui:WaitForReady" />
                 </ui:Target.WaitForReady>
@@ -89,7 +89,7 @@
         <PickBranch.Trigger>
           <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element Safe mode" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
             <ui:WaitUiElementAppear.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="80826566-b54b-4858-9f52-dd827743267e" InformativeScreenshot="b43ec5228bf8fe3b48cdd53829d93a50" Selector="&lt;wnd app='outlook.exe' cls='#32770' title='Microsoft Outlook' /&gt;&lt;wnd ctrlid='65535' title='*Safe mode*' /&gt;" TimeoutMS="240000">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="80826566-b54b-4858-9f52-dd827743267e" InformativeScreenshot="b43ec5228bf8fe3b48cdd53829d93a50" Selector="&lt;wnd app='outlook.exe' cls='#32770' title='Microsoft Outlook' /&gt;&lt;wnd ctrlid='65535' title='*Safe mode*' /&gt;" TimeoutMS="120000">
                 <ui:Target.WaitForReady>
                   <InArgument x:TypeArguments="ui:WaitForReady" />
                 </ui:Target.WaitForReady>

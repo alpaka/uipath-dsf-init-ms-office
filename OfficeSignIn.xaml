@@ -9,7 +9,7 @@
   <this:OfficeSignIn.pw>
     <InArgument x:TypeArguments="ss:SecureString" />
   </this:OfficeSignIn.pw>
-  <sap:VirtualizedContainerService.HintSize>1873.77777777778,2492</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1873.77777777778,2500</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -21,7 +21,7 @@
     </scg1:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg1:List x:TypeArguments="AssemblyReference" Capacity="9">
+    <scg1:List x:TypeArguments="AssemblyReference" Capacity="18">
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -31,31 +31,36 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg1:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OfficeSignIn" sap:VirtualizedContainerService.HintSize="1444.44444444444,2427.11111111111" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence DisplayName="OfficeSignIn" sap:VirtualizedContainerService.HintSize="1444.44444444444,2435.11111111111" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="privacyExists" />
-      <Variable x:TypeArguments="x:Boolean" Name="officeSignInExists" />
+      <Variable x:TypeArguments="x:Boolean" Name="officeSignInExists">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Boolean" Value="True" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg1:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg1:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1402.66666666667,92.8888888888889" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Office sign-in&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1402.66666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Office sign-in&quot;]" />
     <ui:UiElementExists DisplayName="Element Exists" Exists="[officeSignInExists]" sap:VirtualizedContainerService.HintSize="1402.66666666667,68.4444444444444" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
       <ui:UiElementExists.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Sign in to set up Office' /&gt;&lt;wnd aaname='Sign in to set up Office' cls='NetUIHWND' /&gt;&lt;ctrl idx='3' name='Sign in' role='push button' /&gt;" TimeoutMS="3000">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f020bac2-52e8-4e2e-830c-5563740d4455" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Sign in to set up Office' /&gt;&lt;uia cls='NetUILabel' name='Sign in to set up Office' /&gt;" TimeoutMS="60000">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
       </ui:UiElementExists.Target>
     </ui:UiElementExists>
-    <If Condition="[officeSignInExists]" sap:VirtualizedContainerService.HintSize="1402.66666666667,2093.33333333333" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[officeSignInExists]" sap:VirtualizedContainerService.HintSize="1402.66666666667,2099.55555555556" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="1024.44444444444,1943.55555555556" sap2010:WorkflowViewState.IdRef="Sequence_18">
+        <Sequence sap:VirtualizedContainerService.HintSize="1024.44444444444,1948.44444444444" sap2010:WorkflowViewState.IdRef="Sequence_18">
           <sap:WorkflowViewStateService.ViewState>
             <scg1:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -73,7 +78,7 @@
               </ui:CursorPosition>
             </ui:Click.CursorPosition>
             <ui:Click.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a48667de66f1be03aeb158352d1f9d91" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Sign in to set up Office' /&gt;&lt;wnd aaname='Sign in to set up Office' cls='NetUIHWND' /&gt;&lt;ctrl idx='3' name='Sign in' role='push button' /&gt;" TimeoutMS="120000">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="34ab2086-35df-407b-a9ee-40438d2555bd" InformativeScreenshot="a48667de66f1be03aeb158352d1f9d91" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Sign in to set up Office' /&gt;&lt;uia cls='NetUISimpleButton' name='Sign in' /&gt;" TimeoutMS="120000">
                 <ui:Target.WaitForReady>
                   <InArgument x:TypeArguments="ui:WaitForReady" />
                 </ui:Target.WaitForReady>
@@ -82,7 +87,7 @@
           </ui:Click>
           <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into 'DIV'" sap:VirtualizedContainerService.HintSize="982.666666666667,134.666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[user]">
             <ui:TypeInto.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7101642b63513925d88d0c37f2ea8ae6" Selector="&lt;html app='outlook.exe' title='Sign in' /&gt;&lt;webctrl tag='INPUT' type='email' /&gt;">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a4a8dcdf-d0fa-42d6-80d2-add4eed73f7a" InformativeScreenshot="7101642b63513925d88d0c37f2ea8ae6" Selector="&lt;html app='outlook.exe' title='Sign in' /&gt;&lt;webctrl tag='INPUT' type='email' /&gt;">
                 <ui:Target.TimeoutMS>
                   <InArgument x:TypeArguments="x:Int32" />
                 </ui:Target.TimeoutMS>
@@ -104,7 +109,7 @@
               </ui:CursorPosition>
             </ui:Click.CursorPosition>
             <ui:Click.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3e88885558ac72ce6da7cc89ef16c44f" Selector="&lt;html app='outlook.exe' title='Sign in' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb80c6f1-ba81-454f-95ba-32476bdde75a" InformativeScreenshot="3e88885558ac72ce6da7cc89ef16c44f" Selector="&lt;html app='outlook.exe' title='Sign in' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
                 <ui:Target.TimeoutMS>
                   <InArgument x:TypeArguments="x:Int32" />
                 </ui:Target.TimeoutMS>
@@ -114,12 +119,12 @@
               </ui:Target>
             </ui:Click.Target>
           </ui:Click>
-          <Pick sap:VirtualizedContainerService.HintSize="982.666666666667,807.111111111111" sap2010:WorkflowViewState.IdRef="Pick_1">
-            <PickBranch DisplayName="PickBranch login" sap:VirtualizedContainerService.HintSize="425.333333333333,760.888888888889" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+          <Pick sap:VirtualizedContainerService.HintSize="982.666666666667,808.888888888889" sap2010:WorkflowViewState.IdRef="Pick_1">
+            <PickBranch DisplayName="PickBranch login" sap:VirtualizedContainerService.HintSize="425.333333333333,762.666666666667" sap2010:WorkflowViewState.IdRef="PickBranch_1">
               <PickBranch.Trigger>
                 <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="333.777777777778,68.4444444444444" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
                   <ui:WaitUiElementAppear.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='i0118' name='Enter the password for*' role='password' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aaa8c0e3-f275-49a5-914e-4644a87287d7" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='i0118' name='Enter the password for*' role='password' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -138,7 +143,7 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:TypeSecureText ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Secure Text 'password Enter'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[pw]">
                   <ui:TypeSecureText.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="bf40729779fa59d5d49465119021d6f2" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='i0118' name='Enter the password for*' role='password' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="65c759bc-0d39-4b53-bb44-817720eb7521" InformativeScreenshot="bf40729779fa59d5d49465119021d6f2" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='i0118' name='Enter the password for*' role='password' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -160,7 +165,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="19a23bd0bfa5d07ab7c979cf9d9f6f68" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='idSIButton9' name='Sign in' role='button' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c9a11dc4-a9aa-4cc3-b9a2-4367388dc333" InformativeScreenshot="19a23bd0bfa5d07ab7c979cf9d9f6f68" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='idSIButton9' name='Sign in' role='button' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -182,7 +187,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f510ac8d886b2f9d9be1dc2295442f51" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='login_panel' role='form' /&gt;&lt;uia role='main' /&gt;&lt;uia role='list' /&gt;&lt;uia automationid='cancel_button' name='This app only' role='link' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0146908a-7a41-425e-a92f-3fbaca46b93b" InformativeScreenshot="f510ac8d886b2f9d9be1dc2295442f51" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='login_panel' role='form' /&gt;&lt;uia role='main' /&gt;&lt;uia role='list' /&gt;&lt;uia automationid='cancel_button' name='This app only' role='link' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -194,11 +199,11 @@
                 </ui:Click>
               </Sequence>
             </PickBranch>
-            <PickBranch DisplayName="PickBranch SSO existing PW" sap:VirtualizedContainerService.HintSize="383.555555555556,760.888888888889" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+            <PickBranch DisplayName="PickBranch SSO existing PW" sap:VirtualizedContainerService.HintSize="383.555555555556,762.666666666667" sap2010:WorkflowViewState.IdRef="PickBranch_2">
               <PickBranch.Trigger>
                 <ui:WaitUiElementVanish WaitNotActive="{x:Null}" WaitNotVisible="{x:Null}" DisplayName="Wait Element Vanish" sap:VirtualizedContainerService.HintSize="333.777777777778,68.4444444444444" sap2010:WorkflowViewState.IdRef="WaitUiElementVanish_1">
                   <ui:WaitUiElementVanish.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='outlook.exe' title='Sign in' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f7bee1a6-1c5b-4d57-b3d3-d14d45e52c97" Selector="&lt;html app='outlook.exe' title='Sign in' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -213,14 +218,14 @@
           </Pick>
           <ui:UiElementExists DisplayName="Element Exists 'NetUIHWND'" Exists="[privacyExists]" sap:VirtualizedContainerService.HintSize="982.666666666667,106.666666666667" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
             <ui:UiElementExists.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="15e6f67ba5aab37ee35ba86d31195ea2" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Your privacy option' /&gt;&lt;wnd aaname='Your privacy option' cls='NetUIHWND' /&gt;" TimeoutMS="10000">
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="498fbbd3-c8d9-428d-9e4e-f380aa18bf1f" InformativeScreenshot="15e6f67ba5aab37ee35ba86d31195ea2" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Your privacy option' /&gt;&lt;wnd aaname='Your privacy option' cls='NetUIHWND' /&gt;" TimeoutMS="10000">
                 <ui:Target.WaitForReady>
                   <InArgument x:TypeArguments="ui:WaitForReady" />
                 </ui:Target.WaitForReady>
               </ui:Target>
             </ui:UiElementExists.Target>
           </ui:UiElementExists>
-          <If Condition="[privacyExists]" sap:VirtualizedContainerService.HintSize="982.666666666667,256.444444444444" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[privacyExists]" sap:VirtualizedContainerService.HintSize="982.666666666667,257.777777777778" sap2010:WorkflowViewState.IdRef="If_1">
             <If.Then>
               <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Close'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
@@ -234,7 +239,7 @@
                   </ui:CursorPosition>
                 </ui:Click.CursorPosition>
                 <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2f1a698c718490e59efc303705a71eb0" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Your privacy option' /&gt;&lt;wnd aaname='Your privacy option' cls='NetUIHWND' /&gt;&lt;ctrl idx='2' name='Close' role='push button' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f233e4d0-f6b7-4d27-acd3-ae43acdf80b1" InformativeScreenshot="2f1a698c718490e59efc303705a71eb0" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Your privacy option' /&gt;&lt;wnd aaname='Your privacy option' cls='NetUIHWND' /&gt;&lt;ctrl idx='2' name='Close' role='push button' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -246,11 +251,11 @@
               </ui:Click>
             </If.Then>
           </If>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="982.666666666667,92.8888888888889" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished office sign-in&quot;]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="982.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Finished office sign-in&quot;]" />
         </Sequence>
       </If.Then>
       <If.Else>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.777777777778,92.8888888888889" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Office sign-in already finished&quot;]" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.777777777778,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Office sign-in already finished&quot;]" />
       </If.Else>
     </If>
   </Sequence>

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ChangeTrustCenterSettings" sap:VirtualizedContainerService.HintSize="389.777777777778,1563.11111111111" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ChangeTrustCenterSettings" sap:VirtualizedContainerService.HintSize="1873.77777777778,1463.11111111111" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System</x:String>
@@ -37,6 +37,7 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ChangeTrustCenterSettings" sap:VirtualizedContainerService.HintSize="375.555555555556,1398.22222222222" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -48,7 +49,7 @@
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.777777777778,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Changing trust center settings&quot;]" />
     <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBetweenKeys="100" DisplayName="Send Hotkey 'Title Bar'" sap:VirtualizedContainerService.HintSize="333.777777777778,156.444444444444" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="ft" KeyModifiers="Alt">
       <ui:SendHotkey.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="313a3973777a0c69206f6c6b0b6aa350" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='*Outlook' /&gt;" TimeoutMS="60000">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="405b7a0d-5e1f-4d68-aae0-aabdf4caa27e" InformativeScreenshot="313a3973777a0c69206f6c6b0b6aa350" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='*Outlook' /&gt;" TimeoutMS="60000">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
@@ -67,7 +68,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="bdcfb9c99ff16d376c9960aa277ff9d6" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Outlook Options' /&gt;&lt;wnd aaname='Outlook Options' cls='NetUIHWND' /&gt;&lt;ctrl name='Categories' role='list' /&gt;&lt;ctrl name='Trust Center' role='list item' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4ffe92b-0be4-4955-8a8f-808839baef88" InformativeScreenshot="bdcfb9c99ff16d376c9960aa277ff9d6" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Outlook Options' /&gt;&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='Categories' role='list' /&gt;&lt;ctrl name='Trust Center' role='list item' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -89,7 +90,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6570d5f4d48fa165d3f77d63a04a8174" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Outlook Options' /&gt;&lt;wnd aaname='Outlook Options' cls='NetUIHWND' /&gt;&lt;ctrl name='Trust Center' role='pane' /&gt;&lt;ctrl name='Microsoft Outlook Trust Center' role='grouping' /&gt;&lt;ctrl name='Trust Center Settings...' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2354bbfd-dbf5-4b84-904a-1d84fb346841" InformativeScreenshot="6570d5f4d48fa165d3f77d63a04a8174" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Outlook Options' /&gt;&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='Trust Center' role='pane' /&gt;&lt;ctrl name='Microsoft Outlook Trust Center' role='grouping' /&gt;&lt;ctrl name='Trust Center Settings...' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -111,7 +112,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d696186024e9c2bc756b4b626fdfaa2c" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Trust Center' /&gt;&lt;wnd aaname='Trust Center' cls='NetUIHWND' /&gt;&lt;ctrl name='Categories' role='list' /&gt;&lt;ctrl name='Programmatic Access' role='list item' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4b7d4509-e227-42a4-a808-4f241e64a524" InformativeScreenshot="ceb8a798757bf6832948eaf64f60c36d" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Trust Center' /&gt;&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='Categories' role='list' /&gt;&lt;ctrl name='Programmatic Access' role='list item' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -133,7 +134,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3e14da8c6d6294446a29c36f7a955e8a" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Trust Center' /&gt;&lt;wnd aaname='Trust Center' cls='NetUIHWND' /&gt;&lt;ctrl name='Programmatic Access' role='pane' /&gt;&lt;ctrl name='Programmatic Access Security' role='grouping' /&gt;&lt;ctrl name='Never warn me about suspicious activity (not recommended)' role='radio button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9ccad2da-0bc8-466a-946d-ba81bb4b7bc4" InformativeScreenshot="3e14da8c6d6294446a29c36f7a955e8a" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Trust Center' /&gt;&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='Programmatic Access' role='pane' /&gt;&lt;ctrl name='Programmatic Access Security' role='grouping' /&gt;&lt;ctrl name='Never warn me about suspicious activity (not recommended)' role='radio button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -155,7 +156,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3b51fd0a24cd53e3d00af7f48aec3fa4" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Trust Center' /&gt;&lt;wnd aaname='Trust Center' cls='NetUIHWND' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6437de01-6013-4eea-a0b6-504f2f7e6953" InformativeScreenshot="3b51fd0a24cd53e3d00af7f48aec3fa4" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Trust Center' /&gt;&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -177,7 +178,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3b51fd0a24cd53e3d00af7f48aec3fa4" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Outlook Options' /&gt;&lt;wnd aaname='Outlook Options' cls='NetUIHWND' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4ff8708c-818e-42ec-9b22-cbb631b2cfbc" InformativeScreenshot="3b51fd0a24cd53e3d00af7f48aec3fa4" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Outlook Options' /&gt;&lt;wnd cls='NetUIHWND' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>

@@ -3,7 +3,7 @@
     <x:Property Name="user" Type="InArgument(x:String)" />
     <x:Property Name="pw" Type="InArgument(ss:SecureString)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1020.88888888889,1870.22222222222</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1873.77777777778,1649.77777777778</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -30,46 +30,23 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddMailbox" sap:VirtualizedContainerService.HintSize="477.333333333333,1705.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_19">
+  <Sequence DisplayName="AddMailbox" sap:VirtualizedContainerService.HintSize="375.555555555556,1484.88888888889" sap2010:WorkflowViewState.IdRef="Sequence_19">
     <sap:WorkflowViewStateService.ViewState>
       <scg1:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg1:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.555555555556,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Adding mailbox&quot;]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.555555555556,288.888888888889" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.555555555556,210.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg1:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg1:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBetweenKeys="100" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="333.777777777778,118.222222222222" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="id" KeyModifiers="Alt">
-            <ui:SendHotkey.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="82119fb4-2a5b-42ab-9068-f64f66ceff23" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='*Outlook' /&gt;">
-                <ui:Target.TimeoutMS>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:Target.TimeoutMS>
-                <ui:Target.WaitForReady>
-                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                </ui:Target.WaitForReady>
-              </ui:Target>
-            </ui:SendHotkey.Target>
-          </ui:SendHotkey>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" Activate="True" AlterIfDisabled="True" DelayMS="2000" DisplayName="Type Into 'RICHEDIT60W'" sap:VirtualizedContainerService.HintSize="435.555555555556,134.666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="[user]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.777777777778,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Adding mailbox&quot;]" />
+    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" Activate="True" AlterIfDisabled="True" DelayMS="2000" DisplayName="Type Into 'RICHEDIT60W'" sap:VirtualizedContainerService.HintSize="333.777777777778,134.666666666667" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="[user]">
       <ui:TypeInto.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a6f654f5-0ff8-4d5e-a064-9591a72e188c" InformativeScreenshot="d705cab2f05140f0c1698bc3742335eb" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;wnd aaname='Email Account Setup' cls='NetUIHWND' /&gt;&lt;wnd cls='RICHEDIT60W' idx='1' /&gt;" TimeoutMS="60000">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a6f654f5-0ff8-4d5e-a064-9591a72e188c" InformativeScreenshot="d705cab2f05140f0c1698bc3742335eb" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;wnd cls='RICHEDIT60W' idx='1' /&gt;" TimeoutMS="60000">
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'push button  Connect'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'push button  Connect'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -81,7 +58,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd61cbc1-e63b-43c8-8a03-fc6b63975054" InformativeScreenshot="9b8aecc2e67b1f597625881ad08e7916" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;wnd aaname='Email Account Setup' cls='NetUIHWND' /&gt;&lt;ctrl idx='1' name='Connect' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd61cbc1-e63b-43c8-8a03-fc6b63975054" InformativeScreenshot="9b8aecc2e67b1f597625881ad08e7916" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;ctrl idx='1' name='Connect' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -91,7 +68,7 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:TypeSecureText ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayMS="2000" DisplayName="Type Secure Text 'password Enter'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[pw]">
+    <ui:TypeSecureText ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayMS="2000" DisplayName="Type Secure Text 'password Enter'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[pw]">
       <ui:TypeSecureText.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e35b6882-8b25-4f96-bc63-4d161d15e579" InformativeScreenshot="bf40729779fa59d5d49465119021d6f2" Selector="&lt;wnd app='explorer.exe' appid='Microsoft.AAD.BrokerPlugin*' /&gt;&lt;uia automationid='i0281' role='group' /&gt;&lt;uia role='main' /&gt;&lt;uia automationid='i0118' name='Enter the password for*' role='password' /&gt;" TimeoutMS="30000">
           <ui:Target.WaitForReady>
@@ -100,7 +77,7 @@
         </ui:Target>
       </ui:TypeSecureText.Target>
     </ui:TypeSecureText>
-    <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'button  Sign in'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'button  Sign in'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -122,59 +99,71 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'link  This app only'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
-      <ui:Click.CursorPosition>
-        <ui:CursorPosition Position="Center">
-          <ui:CursorPosition.OffsetX>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:CursorPosition.OffsetX>
-          <ui:CursorPosition.OffsetY>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:CursorPosition.OffsetY>
-        </ui:CursorPosition>
-      </ui:Click.CursorPosition>
-      <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f5c487a7-fae2-4c39-8706-ad0cc734a0a1" InformativeScreenshot="9f45ca47435686558ca9154a48abad3d" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;wnd aaname='Email Account Setup' cls='NetUIHWND' /&gt;&lt;ctrl name='Set up Outlook Mobile on my phone, too' role='check box' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:Click.Target>
-    </ui:Click>
-    <ui:Click SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="2000" DisplayName="Click 'push button  Done'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
-      <ui:Click.CursorPosition>
-        <ui:CursorPosition Position="Center">
-          <ui:CursorPosition.OffsetX>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:CursorPosition.OffsetX>
-          <ui:CursorPosition.OffsetY>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:CursorPosition.OffsetY>
-        </ui:CursorPosition>
-      </ui:Click.CursorPosition>
-      <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2e2e9672-0b0d-43d7-a246-e28bb8628329" InformativeScreenshot="6d3fa22645a50783d90b4758893b48ff" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;wnd aaname='Email Account Setup' cls='NetUIHWND' /&gt;&lt;ctrl idx='1' name='Done' role='push button' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:Click.Target>
-    </ui:Click>
-    <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Group  SearchControlsRo...'" sap:VirtualizedContainerService.HintSize="435.555555555556,106.666666666667" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+    <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="333.777777777778,68.4444444444444" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
       <ui:WaitUiElementAppear.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f269dcf9-6529-4c53-a456-38c198df2a39" InformativeScreenshot="3021ace055aad321d650074a2f22b41c" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='*Outlook' /&gt;" TimeoutMS="120000">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e291b9bf-56a1-43ef-b613-c91fe1ce10ce" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&#xA;&lt;uia name='Account successfully added' role='text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
           <ui:Target.WaitForReady>
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
       </ui:WaitUiElementAppear.Target>
     </ui:WaitUiElementAppear>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435.555555555556,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Added mailbox&quot;]" />
+    <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayMS="5000" DisplayName="Click 'link  This app only'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f5c487a7-fae2-4c39-8706-ad0cc734a0a1" InformativeScreenshot="9f45ca47435686558ca9154a48abad3d" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;uia name='Set up Outlook Mobile on my phone, too' role='check box' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'push button  Done'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2e2e9672-0b0d-43d7-a246-e28bb8628329" InformativeScreenshot="6d3fa22645a50783d90b4758893b48ff" Selector="&lt;wnd app='outlook.exe' cls='NUIDialog' title='Email Account Setup' /&gt;&lt;uia name='Done' role='button' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Group  SearchControlsRo...'" sap:VirtualizedContainerService.HintSize="333.777777777778,106.666666666667" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+      <ui:WaitUiElementAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f269dcf9-6529-4c53-a456-38c198df2a39" InformativeScreenshot="3021ace055aad321d650074a2f22b41c" Selector="&lt;wnd app='outlook.exe' cls='rctrl_renwnd32' title='*Outlook' /&gt;&lt;uia cls='MsoCommandBar' idx='1' /&gt;" TimeoutMS="120000">
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:WaitUiElementAppear.Target>
+    </ui:WaitUiElementAppear>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.777777777778,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Added mailbox&quot;]" />
   </Sequence>
 </Activity>
